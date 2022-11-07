@@ -33,7 +33,7 @@ Logical visual description of processing steps for workflow
 
 # Quick start guide
 
-Please see the [Genome assessment post assembly]() guide.
+Please see the [Genome assessment post assembly](https://australianbiocommons.github.io/how-to-guides/genome_assembly/assembly_qc) guide.
 
 ---
 

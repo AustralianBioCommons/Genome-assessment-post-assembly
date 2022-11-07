@@ -3,7 +3,7 @@ Genome assessment post assembly
 
 ## General usage recommendations
 
-Please see the [Genome assessment post assembly]() guide.
+Please see the [Genome assessment post assembly](https://australianbiocommons.github.io/how-to-guides/genome_assembly/assembly_qc) guide.
 
 ## See [change log](./change_log.md)
 
