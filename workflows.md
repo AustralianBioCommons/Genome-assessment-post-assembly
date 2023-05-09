@@ -13,25 +13,17 @@ Genome assessment post assembly
 
 # Description
 
-```
-Introduction of workflow and its component tools.
-
-Table with embedded registry links.
-```
+Once a genome has been assembled, it is important to assess the quality of the assembly, and in the first instance, this quality control (QC) can be achieved using this workflow: more details can be found in [the How-to Guide](https://australianbiocommons.github.io/how-to-guides/genome_assembly/assembly_qc).
 
 ---
 
 # Diagram
 
-```
-Logical visual description of processing steps for workflow
-```
+![](./diagram.png)
 
 ---
 
 # User guide
-
-# Quick start guide
 
 Please see the [Genome assessment post assembly](https://australianbiocommons.github.io/how-to-guides/genome_assembly/assembly_qc) guide.
 
