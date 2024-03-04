@@ -14,7 +14,7 @@
                 }
             ],
             "isBasedOn": "https://github.com/AustralianBioCommons/Genome-assessment-post-assembly.git",
-            "license": "NOASSERTION",
+            "license": "GPL-3.0",
             "mainEntity": {
                 "@id": "Galaxy-Workflow-Genome_assessment_post_assembly_v2.0.0.ga"
             },
