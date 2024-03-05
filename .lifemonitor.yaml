@@ -63,10 +63,10 @@ push:
     - name: "v*.*.*"
       enable_notifications: true
       lifemonitor_instance: production
-      update_registries: [wfhub, wfhubdev]
+      update_registries: [wfhub]
 
     # Also recognize the tag names matching "*.*.*". For the rest, same rules as above.
     - name: "*.*.*"
       enable_notifications: true
-      update_registries: [wfhub, wfhubdev]
+      update_registries: [wfhub]
       lifemonitor_instance: production
