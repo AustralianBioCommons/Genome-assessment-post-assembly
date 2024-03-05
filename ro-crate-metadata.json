@@ -1,0 +1,87 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "datePublished": "2023-11-23T06:34:49+00:00",
+            "hasPart": [
+                {
+                    "@id": "Galaxy-Workflow-Genome_assessment_post_assembly_v2.0.0.ga"
+                },
+                {
+                    "@id": "README.md"
+                }
+            ],
+            "isBasedOn": "https://github.com/AustralianBioCommons/Genome-assessment-post-assembly.git",
+            "license": "GPL-3.0",
+            "mainEntity": {
+                "@id": "Galaxy-Workflow-Genome_assessment_post_assembly_v2.0.0.ga"
+            },
+            "name": "Genome-assessment-post-assembly"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": [
+                {
+                    "@id": "https://w3id.org/ro/crate/1.1"
+                },
+                {
+                    "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
+                }
+            ]
+        },
+        {
+            "@id": "Galaxy-Workflow-Genome_assessment_post_assembly_v2.0.0.ga",
+            "@type": [
+                "File",
+                "SoftwareSourceCode",
+                "ComputationalWorkflow"
+            ],
+            "creator": [
+                {
+                    "@id": "#68fa3a72-40d3-4507-a79c-c2535836a7e3"
+                },
+                {
+                    "@id": "0000-0002-9906-0673"
+                }
+            ],
+            "name": "Genome-assessment-post-assembly",
+            "programmingLanguage": {
+                "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy"
+            },
+            "url": "https://github.com/AustralianBioCommons/Genome-assessment-post-assembly.git",
+            "version": "main"
+        },
+        {
+            "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+            "@type": "ComputerLanguage",
+            "identifier": {
+                "@id": "https://galaxyproject.org/"
+            },
+            "name": "Galaxy",
+            "url": {
+                "@id": "https://galaxyproject.org/"
+            }
+        },
+        {
+            "@id": "#68fa3a72-40d3-4507-a79c-c2535836a7e3",
+            "@type": "Person",
+            "name": "Gareth Price"
+        },
+        {
+            "@id": "0000-0002-9906-0673",
+            "@type": "Person",
+            "name": "Anna Syme"
+        },
+        {
+            "@id": "README.md",
+            "@type": "File",
+            "description": "Workflow documentation"
+        }
+    ]
+}
