@@ -1,0 +1,72 @@
+# workflow name (override name defined on the RO-Crate metadata)
+name: Genome-assessment-post-assembly
+
+# worklow visibility
+public: false
+
+# Issue Checker Settings
+issues:
+  # Enable/Disable issue checker
+  # The list of issue types can be found @ <LIFEMONITOR_API_URL>/workflows/issues
+  # (e.g., https://api.lifemonitor.eu/workflows/issues)
+  check: true
+  # csv of issues to check (all included by default)
+  # include: [repo_layout.MissingROCrateFile, experimental.OutdatedROCrateFile, lm.MissingLMConfigFile, lm.InvalidConfigFile, repo_layout.GitRepositoryWithoutMainBranch, repo_layout.RepositoryNotInitialised, metadata.MissingWorkflowName, repo_layout.MissingWorkflowFile, repo_layout.MissingROCrateWorkflowFile]
+  # csv of issues to ignore (none ignored by default)
+  # exclude: [repo_layout.MissingROCrateFile, experimental.OutdatedROCrateFile, lm.MissingLMConfigFile, lm.InvalidConfigFile, repo_layout.GitRepositoryWithoutMainBranch, repo_layout.RepositoryNotInitialised, metadata.MissingWorkflowName, repo_layout.MissingWorkflowFile, repo_layout.MissingROCrateWorkflowFile]
+
+
+# Github Integration Settings
+push:
+  branches: 
+    # Define the list of branches to watch
+    # - name: feature/XXX                   # Wildcards can be used to specify branches (e.g., feature/*)
+    #   enable_notifications: true          # Enable to notify LifeMonitor and possibly also workflow registries
+    #                                       # such as WorkflowHub (wfhub) and dev.WorkflowHub (wfhubdev).
+    #                                       #   Default: true
+    #   lifemonitor_instance: "production"  # Specify the LifeMonitor instance to notify.
+    #                                       # Available options: "production" (the default) and "development"
+    #                                       # The "development" instance is only for testing.
+    #                                       #   Default: "production"
+    #   update_registries: []               # Workflow registries to be notified. Options are listed
+    #                                       # by the endpoint `<lifemonitor_url>/registries`
+    #                                       #   Default: []
+    #                                       # (e.g., https://api.lifemontor.eu/registries)
+    #
+    # An example:
+    #
+    # - name: "develop"
+    #   enable_notifications: true
+    #   lifemonitor_instance: development
+    #   update_registries: []
+
+    # Monitor master. Notify only LifeMonitor (production instance) of changes.
+    - name: "master"
+      enable_notifications: true
+      lifemonitor_instance: production
+      update_registries: []
+
+
+  tags:
+    # Define the list of **tags** to watch.
+    # The same fields that are applied to 'branches' (above) are also valid for tags.
+    #
+    # Example:
+    # - name: "v*.*.*"  # e.g,. v1.0.2
+    #   enable_notifications: true
+    #   lifemonitor_instance: development
+    #   update_registries: []
+
+    # Recognize tags with names matching "v*.*.*" as new releases.
+    # Notify LifeMonitor (production instance) and the
+    # workflow registries [wfhub, wfhubdev]
+    - name: "v*.*.*"
+      enable_notifications: true
+      lifemonitor_instance: production
+      update_registries: [wfhub]
+
+    # Also recognize the tag names matching "*.*.*". For the rest, same rules as above.
+    - name: "*.*.*"
+      enable_notifications: true
+      update_registries: [wfhub]
+      lifemonitor_instance: production
