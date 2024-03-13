@@ -2,7 +2,7 @@
 name: Genome-assessment-post-assembly
 
 # worklow visibility
-public: false
+public: true
 
 # Issue Checker Settings
 issues:
