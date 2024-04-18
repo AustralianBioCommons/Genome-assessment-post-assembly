@@ -7,7 +7,7 @@
             "datePublished": "2023-11-23T06:34:49+00:00",
             "hasPart": [
                 {
-                    "@id": "Galaxy-Workflow-Genome_assessment_post_assembly_v2.0.0.ga"
+                    "@id": "Galaxy-Workflow-Genome_assessment_post_assembly.ga"
                 },
                 {
                     "@id": "README.md"
@@ -16,7 +16,7 @@
             "isBasedOn": "https://github.com/AustralianBioCommons/Genome-assessment-post-assembly.git",
             "license": "GPL-3.0",
             "mainEntity": {
-                "@id": "Galaxy-Workflow-Genome_assessment_post_assembly_v2.0.0.ga"
+                "@id": "Galaxy-Workflow-Genome_assessment_post_assembly.ga"
             },
             "name": "Genome-assessment-post-assembly"
         },
@@ -36,7 +36,7 @@
             ]
         },
         {
-            "@id": "Galaxy-Workflow-Genome_assessment_post_assembly_v2.0.0.ga",
+            "@id": "Galaxy-Workflow-Genome_assessment_post_assembly.ga",
             "@type": [
                 "File",
                 "SoftwareSourceCode",
