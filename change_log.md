@@ -1,5 +1,9 @@
 # Change log
 
+## v2.0.6
+- Updated label for reads (assembly reads not raw reads)
+- Added workflow report text into the workflow annotation, as it sometimes disappears
+
 ## v2.0.0
 
 - Created new steps to calculate genome coverage
