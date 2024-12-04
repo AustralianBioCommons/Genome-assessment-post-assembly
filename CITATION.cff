@@ -1,4 +1,4 @@
-cff-version: 2.0.0
+cff-version: 1.2.0
 message: "If you use this workflow, please cite as below."
 authors:
   - family-names: "Price"
@@ -8,6 +8,6 @@ authors:
     given-names: "Anna"
     orcid: "https://orcid.org/0000-0002-9906-0673"
 title: "Genome assessment post assembly"
-version: 2.0.0
+version: 2.0.6
 doi: 10.48546/WORKFLOWHUB.WORKFLOW.403.3
 date-released: 2023-11-23
