@@ -1,7 +1,7 @@
 # Change log
 
 ## v2.0.7
-- Updated merqury from version 1.3 to 1.3+galaxy4 (version 1.3 is no longer available on the Galaxy toolshed)
+- Updated merqury tool version string from `1.3` to `1.3+galaxy4` — the bare `1.3` wrapper is no longer available on the Galaxy toolshed, causing a validation error on import. The underlying merqury version is unchanged.
 
 ## v2.0.6
 - Updated label for reads (assembly reads not raw reads)
