@@ -1,5 +1,8 @@
 # Change log
 
+## v2.0.7
+- Updated merqury from version 1.3 to 1.3+galaxy4 (version 1.3 is no longer available on the Galaxy toolshed)
+
 ## v2.0.6
 - Updated label for reads (assembly reads not raw reads)
 - Added workflow report text into the workflow annotation, as it sometimes disappears
