@@ -1,5 +1,9 @@
 # Change log
 
+## v2.0.8
+- Updated Merqury tool_state to include `output_add_headers` and `output_selector` parameters required by `merqury/1.3+galaxy4`
+- Updated Convert characters1 to `v1.0.1`
+
 ## v2.0.7
 - Updated merqury tool version string from `1.3` to `1.3+galaxy4` — the bare `1.3` wrapper is no longer available on the Galaxy toolshed, causing a validation error on import. The underlying merqury version is unchanged.
 
